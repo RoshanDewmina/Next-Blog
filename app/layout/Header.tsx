@@ -1,23 +1,20 @@
-import Link from "next/link";
-import { FunctionComponent } from "react";
-import { UserButton } from "@clerk/nextjs";
+"use client";
+import React from 'react'
+import Link from 'next/link'
+import { Button as AuthButton } from "../auth/Button";
+import { SessionProvider } from 'next-auth/react';
 
-interface HeaderProps {}
+type Props = {}
 
-const Header: FunctionComponent<HeaderProps> = () => {
+const Header = (props: Props) => {
   return (
-    <>
-      <div className="px-2 py-2 border-black border-b flex justify-between">
-        <Link href={"/"} className="text-4xl px-2 py-4">
-          LOGO
-        </Link>
-        <UserButton afterSignOutUrl="/" />
-        <button className="text-white bg-black p-4">
-          Sign In
-        </button>
+    <SessionProvider>
+      <div className='border-b flex justify-between'>
+        <Link href="/" className="text-4xl px-2 py-4">LOGO</Link>
+        <AuthButton />
       </div>
-    </>
-  );
-};
+    </SessionProvider>
+  )
+}
 
-export default Header;
+export default Header

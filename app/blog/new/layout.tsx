@@ -1,10 +1,14 @@
-import React from 'react'
+"use client";
+import { SessionProvider } from "next-auth/react";
+import { Session } from "next-auth";
 
-
-const layout = () => {
+export default function Layout({
+  children,
+  session
+}: any) {
   return (
-    <div>layout</div>
+    <SessionProvider session={session}>
+      {children}
+    </SessionProvider>
   )
 }
-
-export default layout
