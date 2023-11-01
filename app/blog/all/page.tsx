@@ -20,8 +20,8 @@ const page = async (props: Props) => {
   const categories = await prisma.category.findMany();
 
   return (
-    <div className='my-24 container'>
-      <h2 className='text-4xl text-center my-6'>All Articles</h2>
+    <div className='neo bg-slate-500 my-24 container'>
+      <h2 className='text-4xl text-center my-6 text-white'>All Articles</h2>
       <AllPosts categories={categories} posts={posts} /></div>
   )
 }

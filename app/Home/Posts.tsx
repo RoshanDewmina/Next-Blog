@@ -1,35 +1,30 @@
-import { FunctionComponent } from "react";
+import React from "react";
 import { PrismaClient } from "@prisma/client";
 import PostCard from "./PostCard";
 
 const prisma = new PrismaClient();
 
-interface PostsProps {}
+type Props = {};
 
-const Posts: FunctionComponent<PostsProps> = async (props: PostsProps) => {
+const Posts = async (props: Props) => {
+  const posts = await prisma.post.findMany({
+    take: 9,
+    orderBy: {
+      createdAt: "desc",
+    },
+  });
 
-  const posts = await prisma.post.findMany();
-
-  const bgColors = [
-    "bg-red-500",
-    "bg-blue-500",
-    "bg-yellow-500",
-    "bg-indigo-500",
-    "bg-purple-500",
-    "bg-pink-500",
-  ];
+  const bgClasses = ["bg-pink-500", "bg-blue-500", "bg-yellow-500"];
 
   return (
-    <>
-      <div>
-        <h2 className="text-4xl text-center mt-6">Trending</h2>
-        <div className="grid grid-cols-3 gap-4">
-          {posts.map((post, index) => (
-            <PostCard key={post.id} post={post} className={bgColors[index]} />
-          ))} 
-        </div>
+    <div className="neo bg-slate-300 mx-2 mt-2">
+      <h2 className="text-4xl text-center mt-6">Trending</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+        {posts.map((post, index) => (
+          <PostCard key={post.id} post={post} className={bgClasses[index]} />
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

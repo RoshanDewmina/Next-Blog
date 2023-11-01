@@ -1,16 +1,12 @@
-import React from 'react'
 import NewBlogForm from './NewBlogForm'
 import { getCategories } from '@/app/actions/getCategories'
 
-type Props = {}
+import React from 'react'
 
-const page = async (props: Props) => {
+const page = async() => {
   const categories = await getCategories();
-
   return (
-    <div>
-      <NewBlogForm blogCategories={categories} />
-    </div>
+    <div className='neo mx-2 mt-4 mb-4'><NewBlogForm blogCategories={categories}/></div>
   )
 }
 

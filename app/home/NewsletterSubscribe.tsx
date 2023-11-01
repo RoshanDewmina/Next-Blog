@@ -29,9 +29,9 @@ const NewsletterSubscribe = (props: Props) => {
 
   return (
     <form action={create}>
-      <div>
-        <input type="email" name="email" id="email" placeholder='Enter your email' className='border-2 rounded-full rounded-r-none py-3 px-4 bg-gray-200 text-gray-800 outline-none placeholder-gray-500 focus:bg-gray-100 flex-1 p-2' />
-        <button className=' border-2 rounded-full rounded-l-none py-3 px-4 bg-gray-900 text-gray-100 font-semibold uppercase hover:bg-gray-800'>Subscribe</button>
+      <div className=''>
+        <input type="email" name="email" id="email" placeholder='Enter your email' className='border-2 rounded-lg rounded-r-none py-3 px-4 bg-gray-200 text-gray-800 outline-none placeholder-gray-500 focus:bg-gray-100 flex-1 p-2' />
+        <button className=' border-2 rounded-lg rounded-l-none py-3 px-4 bg-gray-900 text-gray-100 font-semibold uppercase hover:bg-gray-800'>Subscribe</button>
       </div>
     </form>
   )

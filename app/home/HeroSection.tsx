@@ -1,29 +1,32 @@
-import React from 'react'
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from 'next/link';
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const HeroSection = (props: Props) => {
   return (
-    <div className="border-b bg-[#EEF2ED]">
-      <section className='grid container grid-cols-1 sm:grid-cols-12 pt-6 pb-8'>
-        <div className='col-span-7 w-full place-self-center text-center sm:text-left justify-self-start'>
-          <h1 className='text-2xl sm:text-4xl md:text-6xl md:leading-normal'>Tech News for Busy Peeps</h1>
-          <h2>Stay up-to-date with the latest tech news and announcements.</h2>
-          <ul>
-            <li><span className='mr-2'>✔️</span>Industry News</li>
-            <li><span className='mr-2'>✔️</span>Product Launches</li>
-            <li><span className='mr-2'>✔️</span>Innovation Spotlights</li>
-          </ul>
-          <Link href="/blog/all" className='text-white block w-fit bg-indigo-500 px-4 py-2 sm:px-6 sm:py-4 mt-3 border-2 rounded shadow-[0.25rem_0.25rem_0px_0px_rgba(0,0,0,1)]'>Browse Articles</Link>
+    <>
+      <section className="neo bg-slate-100 rounded-lg mx-2 grid :grid-cols-1 sm:grid-cols-12 justify-between ">
+        <div className="col-span-7 w-full text-center sm:text-left justify-self-start">
+          <h1 className="text-2xl sm:text-4xl md:text-6xl md:leading-normal">
+            Tech News for Busy Peeps
+          </h1>
+          <Button className="ml-80 flex-autotransition-all hover:-translate-y-1 text-white bg-indigo-500 border-2 rounded shadow-[0.25rem_0.25rem_0px_0px_rgba(0,0,0,1)]">
+            Get Started
+          </Button>
         </div>
-        <div className='col-span-5 place-self-center'>
-          {/* <Image src="/coffee.png" width={300} height={300} alt="Person walking" /> */}
+        <div className="col-span-5 place-self-center">
+          <Image
+            src={"/Dog call.svg"}
+            width={500}
+            height={500}
+            alt="Walking"
+          />
         </div>
       </section>
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default HeroSection
+export default HeroSection;
