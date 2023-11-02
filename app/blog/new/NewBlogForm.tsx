@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { useUser,useAuth } from "@clerk/clerk-react";
+import { useUser, useAuth } from "@clerk/clerk-react";
 import { createPost } from "@/app/actions/publishPost";
 import Link from "next/link";
 import type { Category } from "@prisma/client";
@@ -15,7 +15,6 @@ type Props = {
 import "@uploadthing/react/styles.css";
 
 import { UploadButton } from "../../utils/uploadthing";
-import { Button } from "@/components/ui/button";
 
 const NewBlogForm = (props: Props) => {
   const { userId, sessionId, getToken } = useAuth();
@@ -30,8 +29,7 @@ const NewBlogForm = (props: Props) => {
 
   const [submitted, setSubmitted] = useState<boolean>(false);
 
-  if (!isSignedIn)
-    return <div>You must be signed in to post</div>;
+  if (!isSignedIn) return <div>You must be signed in to post</div>;
 
   console.log(props.blogCategories);
 
@@ -83,14 +81,14 @@ const NewBlogForm = (props: Props) => {
         onSubmit={handleSubmit}
       >
         <div className="neo mr-[51%]">
-            <input
-              type="text"
-              className="text-6xl focus-visible:outline-none"
-              placeholder="Title"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-              name="title"
-            />
+          <input
+            type="text"
+            className="text-6xl focus-visible:outline-none"
+            placeholder="Title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            name="title"
+          />
         </div>
         <textarea
           name="content"
@@ -109,21 +107,21 @@ const NewBlogForm = (props: Props) => {
           <label className="text-slate-600 mb-3">
             {thumbnail ? "Change Image" : "Add thumbnail image(optional)"}
           </label>
-              <UploadButton
-                className="items-start"
-                endpoint="imageUploader"
-                onClientUploadComplete={(res) => {
-                  // Do something with the response
-                  console.log("Files: ", res);
-                  if (res) {
-                    setThumbnail(res[0].url);
-                  }
-                }}
-                onUploadError={(error: Error) => {
-                  // Do something with the error.
-                  alert(`ERROR! ${error.message}`);
-                }}
-              />
+          <UploadButton
+            className="items-start"
+            endpoint="imageUploader"
+            onClientUploadComplete={(res) => {
+              // Do something with the response
+              console.log("Files: ", res);
+              if (res) {
+                setThumbnail(res[0].url);
+              }
+            }}
+            onUploadError={(error: Error) => {
+              // Do something with the error.
+              alert(`ERROR! ${error.message}`);
+            }}
+          />
           <CategoryDropdown
             list={props.blogCategories}
             selected={categoryId}
