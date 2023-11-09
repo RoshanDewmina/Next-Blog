@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Neo Blog
 
-## Getting Started
+Stay up-to-date with the latest tech news and announcements
+_This line should grab attention and summarize the coolest aspect of your project._
 
-First, run the development server:
+Welcome to Neo Blog, a cutting-edge blogging platform where creativity meets structure. Crafted with the latest technologies, our platform offers a seamless writing and reading experience, empowering users to share their thoughts with the world.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Modern Stack**: Built with the powerful Next.js 13 and elegantly styled with Tailwind CSS for a responsive, mobile-first user experience.
+- **Reliable Data Management**: Utilizing Prisma ORM for robust and efficient interactions with a PostgreSQL database.
+- **Secure Authentication**: Full authentication system in place, ensuring users can sign up, log in, and stay protected.
+- **User Interactions**: Dive into a community of ideas; post your blogs, engage with others, and explore a multitude of perspectives.
+- **Image Uploads**: Featuring a file uploader to add visual flair to your posts with relevant images.
+- **Stay Updated**: Never miss out with our newsletter signup - keeping you in the loop with the latest posts and platform updates.
+- **Distinct Design**: All delivered with a neobrutalism aesthetic, blending minimalistic functionality with a bold, raw edge.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Sneak Peek
+![Screenshot 2023-11-09 at 11 48 47 AM](https://github.com/RoshanDewmina/Next-Blog/assets/107935194/aedafe87-cba0-45a5-87a3-1a53a52036e9)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## How It Works
+https://github.com/RoshanDewmina/Next-Blog/assets/107935194/6d0269fb-54db-4321-b37f-47e7e774a6b1
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Get Started
+To get started with this project, follow these steps:
 
-## Deploy on Vercel
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/RoshanDewmina/Next-Blog.git
+   ```
+2. Change directory into the project folder:
+   ```sh
+   cd Next-Blog-main
+   ```
+3. Install the dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
