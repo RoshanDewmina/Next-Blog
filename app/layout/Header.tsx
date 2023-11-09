@@ -13,7 +13,7 @@ function Header({}: Props) {
     <>
       <div className="neo mb-2 px-2 py-4 border-black border flex justify-between rounded-lg mt-4 mx-2 bg-slate-400">
         <Link href="/" className="text-4xl text-black">
-          LOGO
+          Neo Blog
         </Link>
         <div className="flex flex-row">
           <div className="mt-2 ml-4">
@@ -43,7 +43,7 @@ function Header({}: Props) {
               </>
             )}
           </div>
-          <ModeToggle />
+          {/* <ModeToggle /> */}
         </div>
       </div>
     </>
