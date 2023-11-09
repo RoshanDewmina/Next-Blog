@@ -104,7 +104,7 @@ const NewBlogForm = (props: Props) => {
               className="w-20 h-20 object-cover rounded-full"
             />
           )}
-          <label className="text-slate-600 mb-3">
+          <label className="text-white mb-3 ">
             {thumbnail ? "Change Image" : "Add thumbnail image(optional)"}
           </label>
           <UploadButton
