@@ -1,4 +1,3 @@
-![project flowchart](https://github.com/RoshanDewmina/Next-Blog/assets/107935194/03ddc868-5bfb-4f3d-81e0-62449423efe0)
 # Neo Blog
 
 Stay up-to-date with the latest tech news and announcements
@@ -22,23 +21,11 @@ _Insert image here: A captivating screenshot of your platform's homepage_
 
 
 ## How It Works
-_Insert image here: A diagram or flowchart explaining the architecture or user flow_![Uploading project // Project Flowchart
-digraph {
-	A [label=Start]
-	B [label="User Authentication"]
-	C [label="Post Creation"]
-	D [label="Image Upload"]
-	E [label="View Posts"]
-	F [label="Newsletter Signup"]
-	G [label=End]
-	A -> B
-	B -> C
-	B -> D
-	B -> E
-	B -> F
-	E -> G
-}
-flowchart.png…]()
+_Insert image here: A diagram or flowchart explaining the architecture or user flow_
+
+
+https://github.com/RoshanDewmina/Next-Blog/assets/107935194/6d0269fb-54db-4321-b37f-47e7e774a6b1
+
 
 
 ## Get Started
