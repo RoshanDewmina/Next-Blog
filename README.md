@@ -29,11 +29,11 @@ To get started with this project, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone [repository-url]
+   git clone https://github.com/RoshanDewmina/Next-Blog.git
    ```
 2. Change directory into the project folder:
    ```sh
-   cd [project-name]
+   cd Next-Blog-main
    ```
 3. Install the dependencies:
    ```sh
