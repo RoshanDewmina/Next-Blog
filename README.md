@@ -16,21 +16,31 @@ Welcome to Neo Blog, a cutting-edge blogging platform where creativity meets str
 - **Distinct Design**: All delivered with a neobrutalism aesthetic, blending minimalistic functionality with a bold, raw edge.
 
 ## Sneak Peek
-_Insert image here: A captivating screenshot of your platform's homepage_
 ![Screenshot 2023-11-09 at 11 48 47 AM](https://github.com/RoshanDewmina/Next-Blog/assets/107935194/aedafe87-cba0-45a5-87a3-1a53a52036e9)
 
 
 ## How It Works
-_Insert image here: A diagram or flowchart explaining the architecture or user flow_
-
-
 https://github.com/RoshanDewmina/Next-Blog/assets/107935194/6d0269fb-54db-4321-b37f-47e7e774a6b1
 
 
 
 ## Get Started
--- Clone the repo
--- Cd into it and run npm i 
--- Then run npm run dev
+To get started with this project, follow these steps:
+
+1. Clone the repository:
+   ```sh
+   git clone [repository-url]
+   ```
+2. Change directory into the project folder:
+   ```sh
+   cd [project-name]
+   ```
+3. Install the dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm run dev
 
 
